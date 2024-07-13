@@ -32,3 +32,57 @@ header {
 .player-card h2, .match-summary h2 {
   font-size: 1.5em;
 }
+Example styles in App.css
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #282c34;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  margin-bottom: 20px; /* Ensure space between header and search box/cards */
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  border-radius: 50%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  flex: 1; /* Ensures title takes remaining space */
+  text-align: center; /* Centers title */
+}
+
+.searchInput {
+  padding: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 20px;
+}
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 600px) {
+  .header {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    padding: 15px;
+  }
+  .searchInput {
+    font-size: 0.9rem;
+  }
+}
